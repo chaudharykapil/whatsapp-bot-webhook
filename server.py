@@ -44,5 +44,5 @@ def sendmessage():
 
 @app.route("/callback")
 def callback():
-    return "ok"
+    return "fddnfmdfnsdfklefmdsfergfdffdgfgfd"
 #app.run(debug=True)
