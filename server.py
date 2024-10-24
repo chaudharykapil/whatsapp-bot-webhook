@@ -48,7 +48,7 @@ def callback():
     return CHALLENGE
 
 @app.route("/callback",methods = ["POST"])
-def callback():
+def callbackPOST():
     
     return "Hii"
 #app.run(debug=True)
