@@ -42,8 +42,13 @@ def sendmessage():
     print(response.status_code)
     return response.text
 
-@app.route("/callback")
+@app.route("/callback",methods = ["GET"])
 def callback():
     CHALLENGE = request.args.get("hub.challenge")
     return CHALLENGE
+
+@app.route("/callback",methods = ["POST"])
+def callback():
+    
+    return "Hii"
 #app.run(debug=True)
