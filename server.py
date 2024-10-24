@@ -42,5 +42,7 @@ def sendmessage():
     print(response.status_code)
     return response.text
 
-
+@app.route("/callback")
+def callback():
+    return "ok"
 #app.run(debug=True)
