@@ -44,5 +44,6 @@ def sendmessage():
 
 @app.route("/callback")
 def callback():
-    return "fddnfmdfnsdfklefmdsfergfdffdgfgfd"
+    CHALLENGE = request.args.get("hub.challenge")
+    return CHALLENGE
 #app.run(debug=True)
