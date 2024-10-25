@@ -1,9 +1,11 @@
 from  flask import Flask,request
+from flask_cors import CORS
 import requests
 app = Flask(__name__)
-
+CORS(app=app)
 @app.route("/")
 def home():
+    print("hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
     return "hello"
 
 @app.route("/send-message")
