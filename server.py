@@ -51,6 +51,6 @@ def callback():
 
 @app.route("/callback",methods = ["POST"])
 def callbackPOST():
-    
+    print(request.data)
     return "Hii"
 #app.run(debug=True)
