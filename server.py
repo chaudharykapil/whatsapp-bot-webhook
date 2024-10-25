@@ -20,7 +20,7 @@ def sendmessage():
         "to": "918279636156",
         "type": "template",
         "template": {
-            "name": "mytemplate",
+            "name": "mytemplate2",
             "language": {
                 "code": "en"
             },
@@ -51,6 +51,6 @@ def callback():
 
 @app.route("/callback",methods = ["POST"])
 def callbackPOST():
-    print(request.data)
+    print(request.json)
     return "Hii"
 #app.run(debug=True)
